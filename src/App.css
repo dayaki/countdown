@@ -1,0 +1,187 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 5rem; */
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(
+      circle at 90% 24%,
+      rgba(209, 209, 209, 0.04) 0%,
+      rgba(209, 209, 209, 0.04) 50%,
+      rgba(160, 160, 160, 0.04) 50%,
+      rgba(160, 160, 160, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 91% 63%,
+      rgba(45, 45, 45, 0.04) 0%,
+      rgba(45, 45, 45, 0.04) 50%,
+      rgba(87, 87, 87, 0.04) 50%,
+      rgba(87, 87, 87, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 17% 2%,
+      rgba(124, 124, 124, 0.04) 0%,
+      rgba(124, 124, 124, 0.04) 50%,
+      rgba(117, 117, 117, 0.04) 50%,
+      rgba(117, 117, 117, 0.04) 100%
+    ),
+    linear-gradient(88deg, rgb(33, 20, 105), rgb(1, 15, 13));
+}
+.timer .time h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 2rem;
+  font-family: "Fredoka One", cursive;
+  /* font-family: "Roboto Mono", monospace; */
+}
+.timer .time h2 span {
+  font-size: 1.5rem;
+  vertical-align: text-top;
+  margin-left: 0.2rem;
+}
+.timer .session h3 {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  /* font-family: "Roboto Mono", monospace; */
+  font-size: 3rem;
+}
+.timer .countdown {
+  margin: 4rem 0;
+}
+.timer .countdown h1 {
+  font-family: "Dosis", sans-serif;
+  font-size: 20rem;
+  font-weight: bold;
+  margin: 0;
+}
+.timer .countdown h1 span {
+  /* vertical-align: super; */
+  vertical-align: top;
+  margin-top: -3rem;
+  display: inline-block;
+}
+.footnote p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Scheduler */
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  padding: 10rem 0rem;
+  background-image: radial-gradient(
+      circle at 17% 36%,
+      rgba(35, 35, 35, 0.06) 0%,
+      rgba(35, 35, 35, 0.06) 25%,
+      rgba(42, 42, 42, 0.06) 25%,
+      rgba(42, 42, 42, 0.06) 50%,
+      rgba(48, 48, 48, 0.06) 50%,
+      rgba(48, 48, 48, 0.06) 75%,
+      rgba(55, 55, 55, 0.06) 75%,
+      rgba(55, 55, 55, 0.06) 100%
+    ),
+    radial-gradient(
+      circle at 4% 82%,
+      rgba(0, 0, 0, 0.06) 0%,
+      rgba(0, 0, 0, 0.06) 25%,
+      rgba(39, 39, 39, 0.06) 25%,
+      rgba(39, 39, 39, 0.06) 50%,
+      rgba(78, 78, 78, 0.06) 50%,
+      rgba(78, 78, 78, 0.06) 75%,
+      rgba(117, 117, 117, 0.06) 75%,
+      rgba(117, 117, 117, 0.06) 100%
+    ),
+    radial-gradient(
+      circle at 45% 66%,
+      rgba(64, 64, 64, 0.06) 0%,
+      rgba(64, 64, 64, 0.06) 25%,
+      rgba(91, 91, 91, 0.06) 25%,
+      rgba(91, 91, 91, 0.06) 50%,
+      rgba(117, 117, 117, 0.06) 50%,
+      rgba(117, 117, 117, 0.06) 75%,
+      rgba(144, 144, 144, 0.06) 75%,
+      rgba(144, 144, 144, 0.06) 100%
+    ),
+    linear-gradient(129deg, rgb(29, 29, 29), rgb(24, 24, 24));
+}
+.form .schedule {
+  width: 40%;
+  padding: 2rem;
+  border-right: 1px solid #fff;
+}
+.form .schedule h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem;
+}
+.form .schedule p {
+  width: 70%;
+}
+.form .schedule p label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: "Rubik", sans-serif;
+}
+.form .schedule p input {
+  height: 3.5rem;
+  width: 100%;
+  padding-left: 0.5rem;
+}
+.form .schedule p select {
+  height: 3.5rem;
+  width: 100%;
+  padding-left: 0.5rem;
+}
+.form .schedule p button {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  background-color: white;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.form .session {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.form .session h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.2rem;
+  margin: 0;
+  margin-bottom: 2.5rem;
+}
+.form .session p {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  margin: 0;
+  margin-bottom: 0.8rem;
+}
+.form .session .line {
+  width: 4rem;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 1.8rem;
+}
+.form .session h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+}
+.form .session {
+}
