@@ -1,8 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import firebase from "./firebase";
-import "./App.css";
+import Timer from "./components/Timer";
 
-function Scheduler() {
+function Scheduler({
+  tsession,
+  tminister,
+  tminutes,
+  tseconds,
+  status,
+}: {
+  tsession: string;
+  tminister: string;
+  tminutes: string;
+  tseconds: string;
+  status: string;
+}) {
   const [session, setSession] = useState("");
   const [minister, setMinister] = useState("");
   const [timer, setTimer] = useState("");
@@ -10,15 +22,15 @@ function Scheduler() {
   const handleSubmit = () => {
     if (minister !== "" && timer !== "") {
       console.log(session, minister, timer);
-      const todoRef = firebase.database().ref("countdown");
-      const todo = {
-        session,
-        minister,
-        timer,
-        complete: false,
-      };
-
-      todoRef.push(todo);
+      const timerRef = firebase
+        .database()
+        .ref("countdown")
+        .child("-MGRDowwchtwXT7kMWxp");
+      timerRef.update({
+        minister: minister,
+        session: session,
+        timer: timer,
+      });
     }
   };
 
@@ -41,6 +53,7 @@ function Scheduler() {
             <option defaultValue="Prayer">Prayer</option>
             <option defaultValue="Praise">Praise</option>
             <option defaultValue="Worship">Worship</option>
+            <option defaultValue="Tithe">Tithe</option>
             <option defaultValue="Sermon">Sermon</option>
             <option defaultValue="Closing">Closing Announcement</option>
           </select>
@@ -69,11 +82,13 @@ function Scheduler() {
           <button onClick={handleSubmit}>Start Session</button>
         </p>
       </div>
+
       <div className="session">
-        <h3>Current Session</h3>
-        <p>Prayer</p>
+        <h2>Current Session</h2>
+        <h4>{tsession}</h4>
         <div className="line"></div>
-        <h4>Belinda</h4>
+        <h3>{tminister}</h3>
+        <Timer minutes={tminutes} seconds={tseconds} statusChange={status} />
       </div>
     </div>
   );

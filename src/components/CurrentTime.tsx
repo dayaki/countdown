@@ -7,7 +7,7 @@ function CurrentTime() {
   useEffect(() => {
     setInterval(() => {
       setCurrentTime(moment());
-    }, 60000);
+    }, 61000);
   });
 
   return (
