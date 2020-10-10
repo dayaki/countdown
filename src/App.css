@@ -3,10 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding-top: 5rem; */
   color: #fff;
   width: 100%;
   height: 100vh;
+  max-height: 100%;
+
   background-image: radial-gradient(
       circle at 90% 24%,
       rgba(209, 209, 209, 0.04) 0%,
@@ -31,17 +32,25 @@
     linear-gradient(88deg, rgb(33, 20, 105), rgb(1, 15, 13));
 }
 .timer .time h2 {
-  font-size: 4rem;
+  font-size: 8rem;
   font-weight: bold;
   margin: 0;
   margin-bottom: 2rem;
   font-family: "Fredoka One", cursive;
   /* font-family: "Roboto Mono", monospace; */
 }
+.timer .time {
+  /* position: absolute;
+  top: 3rem; */
+}
 .timer .time h2 span {
   font-size: 1.5rem;
   vertical-align: text-top;
   margin-left: 0.2rem;
+}
+.timer .session {
+  /* position: absolute;
+  top: 13rem; */
 }
 .timer .session h3 {
   margin: 0;
@@ -50,19 +59,24 @@
   font-size: 3rem;
 }
 .timer .countdown {
-  margin: 4rem 0;
+  /* margin: 4rem 0; */
+  /* position: absolute;
+  bottom: -4rem; */
 }
 .timer .countdown h1 {
   font-family: "Dosis", sans-serif;
-  font-size: 20rem;
+  font-size: 27rem;
   font-weight: bold;
   margin: 0;
 }
+.timer h1 {
+  color: #fff;
+}
 .timer .warning h1 {
-  color: yellow;
+  /* color: yellow; */
 }
 .timer .danger h1 {
-  color: red;
+  /* color: red; */
 }
 .timer .countdown h1 span {
   /* vertical-align: super; */

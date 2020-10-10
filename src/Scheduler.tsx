@@ -52,8 +52,9 @@ function Scheduler({
             </option>
             <option defaultValue="Prayer">Prayer</option>
             <option defaultValue="Praise">Praise</option>
+            <option defaultValue="Choir">Choir Ministration</option>
+            <option defaultValue="Giving">Giving</option>
             <option defaultValue="Worship">Worship</option>
-            <option defaultValue="Tithe">Tithe</option>
             <option defaultValue="Sermon">Sermon</option>
             <option defaultValue="Closing">Closing Announcement</option>
           </select>
